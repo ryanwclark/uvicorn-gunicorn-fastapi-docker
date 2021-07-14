@@ -334,7 +334,8 @@ jobs:
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: true
           tags: ${{ steps.prep.outputs.tags }}
-python38slim:
+
+  python38slim:
     env:
       RELEASE: 3.8-slim
     runs-on: ubuntu-latest
